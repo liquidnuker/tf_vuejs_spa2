@@ -15,7 +15,7 @@
   export default {
     data () {
       return {
-        msg: 'contact message'
+        msg: ''
       }
     },
     computed: {
@@ -24,11 +24,28 @@
       }
     },
     beforeCreate: function () {
-      console.log("beforeCreate");
+      // console.log("todo: insert preloader v-if");
     },
     created: function () {
       console.log(this.$route.params.id);
+      this.prepare(this.$route.params.id);
+    },
+    methods: {
+      prepare: function(url) {
+        // convert to array to remove the " : "
+        let urlArray = url.split("");
+        urlArray.splice(0, 1);
+        
+        // convert back to str
+        let urlString = urlArray.join("");
+        
+        // send to outside store to fetch data
+        console.log(urlString);
+        this.msg = "urlString: " + urlString;
 
+
+        
+      }
     }
   }
 </script>
