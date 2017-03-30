@@ -1,0 +1,55 @@
+@mixin border-radius($var) {
+  -webkit-border-radius: $var + px;
+  -moz-border-radius: $var + px;
+  -ms-border-radius: $var + px;
+  border-radius: $var + px;
+}
+
+%pos--absolute {
+  position: absolute;
+}
+
+%pos--relative {
+  position: relative;
+}
+
+%mp--0 {
+  margin: 0;
+  padding: 0;
+}
+
+%margin--auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%padd--4 {
+  padding: 4px;
+}
+
+%padd--6 {
+  padding: 6px;
+}
+
+%br--4 {
+  border-radius: 4px;
+}
+
+%text--left {
+  text-align: left;
+}
+
+%text--right {
+  text-align: right;
+}
+
+%text--center {
+  text-align: center;
+}
+
+%img--responsive {
+  display: block;
+  width: 100%; /* optional */
+  max-width: 100%;
+  height: auto;
+}

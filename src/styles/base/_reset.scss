@@ -1,0 +1,47 @@
+%mp--0 {
+  margin: 0;
+  padding: 0;
+}
+
+*, 
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+body, p, blockquote {
+  @extend %mp--0;
+}
+
+a img, iframe { 
+  border: none; 
+}
+  
+h1, h2, h3, h4, h5, h6 {
+  @extend %mp--0;
+  font-size: 100%;
+}
+  
+ul, ol, dl, li, dt, dd {
+  @extend %mp--0;
+}
+  
+form, fieldset {
+  @extend %mp--0;
+}
+  
+legend {
+  @extend %mp--0;
+}
+
+input, textarea, select {
+  @extend %mp--0;
+  font-size: 100%;
+  font-family: inherit;
+}
+  
+select { 
+  padding: 0; 
+}
+
+

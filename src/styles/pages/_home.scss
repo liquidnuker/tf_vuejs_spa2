@@ -1,0 +1,29 @@
+.vc-header {
+  height: 80px;
+  background-color: #444;
+}
+
+.vc-footer {
+  margin-bottom: 0;
+  height: 120px;
+  background-color: #444;
+}
+
+.vc-page-home,
+.vc-page-about {
+  background-color: #ccc;
+}
+
+
+.router-view {
+  height: 300px;
+}
+
+.vc-router-links > .menubar {
+  @extend %padd--4;
+  background-color: #333;
+  color: #ccc;
+}
+
+
+
