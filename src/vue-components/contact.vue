@@ -6,6 +6,8 @@
     <p>params id: {{$route.params.id}}</p>
 
     <p>{{ msg }}</p>
+    <br>
+    <br>
     <p>{{ gr }}</p>
   </div>
 </template>
@@ -13,13 +15,20 @@
   export default {
     data () {
       return {
-        msg: 'fdfdff'
+        msg: 'contact message'
       }
     },
     computed: {
       gr: function () {
-        // return this.$route
+        return this.$route.params.id
       }
+    },
+    beforeCreate: function () {
+      console.log("beforeCreate");
+    },
+    created: function () {
+      console.log(this.$route.params.id);
+
     }
   }
 </script>
