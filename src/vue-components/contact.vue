@@ -24,10 +24,9 @@
       }
     },
     beforeCreate: function () {
-      // console.log("todo: insert preloader v-if");
+      // todo: insert loading v-if
     },
     created: function () {
-      console.log(this.$route.params.id);
       this.prepare(this.$route.params.id);
     },
     methods: {
@@ -41,10 +40,7 @@
         
         // send to outside store to fetch data
         console.log(urlString);
-        this.msg = "urlString: " + urlString;
-
-
-        
+        this.msg = "urlString: " + urlString;        
       }
     }
   }
