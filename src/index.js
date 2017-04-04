@@ -10,7 +10,8 @@ import vcRouterLinks from "./vue-components/links.vue";
 import vcPageHome from './vue-components/home.vue';
 import vcPageAbout from './vue-components/about.vue';
 import vcPageContact from './vue-components/contact.vue';
-import err404 from './vue-components/err404.vue';
+import global404 from './vue-components/global404.vue';
+import subroute404 from './vue-components/subroute404.vue';
 
 // 
 // ======================================================/
@@ -26,8 +27,11 @@ const routes = [{
   path: '/contact/:type/:id',
   component: vcPageContact
 }, {
+  path: '/contact/*',
+  component: subroute404
+}, {
   path: '*',
-  component: err404
+  component: global404
 }];
 
 const router = new VueRouter({
