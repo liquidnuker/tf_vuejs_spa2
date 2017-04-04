@@ -8,7 +8,7 @@
     <p>{{ msg }}</p>
     <br>
     <br>
-    <p>{{ gr }}</p>
+    <p>computed: {{ gr }}</p>
   </div>
 </template>
 <script>
@@ -20,6 +20,7 @@
     },
     computed: {
       gr: function () {
+        this.prepare(this.$route.params.id);
         return this.$route.params.id
       }
     },
@@ -28,6 +29,7 @@
     },
     created: function () {
       this.prepare(this.$route.params.id);
+
     },
     methods: {
       prepare: function(url) {
