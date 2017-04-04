@@ -21,7 +21,7 @@
     computed: {
       gr: function () {
         this.prepare(this.$route.params.id);
-        return this.$route.params.id
+        return this.$route.params.id;
       }
     },
     beforeCreate: function () {
@@ -41,7 +41,6 @@
         let urlString = urlArray.join("");
         
         // send to outside store to fetch data
-        console.log(urlString);
         this.msg = "urlString: " + urlString;        
       }
     }
