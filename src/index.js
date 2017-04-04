@@ -23,7 +23,7 @@ const routes = [{
   path: '/about',
   component: vcPageAbout
 }, {
-  path: '/contact/:id',
+  path: '/contact/:type/:id',
   component: vcPageContact
 }, {
   path: '*',

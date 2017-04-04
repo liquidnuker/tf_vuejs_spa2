@@ -3,7 +3,7 @@
   <div class="menubar">
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
-    <router-link v-bind:to="'/contact/:' + msg">{{ msg }}</router-link>
+    <router-link v-bind:to="'/contact/:' + msg +'user/:'+  msg2">{{ msg }}</router-link>
     
   </div>
   <router-view class="router-view"></router-view>
@@ -13,7 +13,8 @@
   export default {
     data () {
       return {
-        msg: 'fdfdff'
+        msg: 'id-msg',
+        msg2: 'user-msg2'
       }
     },
     computed: {
