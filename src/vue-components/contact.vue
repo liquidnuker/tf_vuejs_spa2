@@ -12,6 +12,7 @@
   </div>
 </template>
 <script>
+  import {jsonLoader} from "../jsonloader.js";
   export default {
     data () {
       return {
@@ -41,7 +42,9 @@
         let urlString = urlArray.join("");
         
         // send to outside store to fetch data
-        this.msg = "urlString: " + urlString;        
+        this.msg = "urlString: " + urlString; 
+        jsonLoader.url = urlString;
+        console.log("jsonloader: " + jsonLoader.url);       
       }
     }
   }
