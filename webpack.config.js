@@ -13,7 +13,6 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, './dist'),
-    // publicPath: path.resolve(__dirname, './dist'),
     filename: '[name].bundle.js'
   },
   module: {
@@ -56,10 +55,6 @@ module.exports = {
     ]
   },
   plugins: [
-    // new webpack.ProvidePlugin({
-    //   $: 'jquery',
-    //   jQuery: 'jquery'
-    // }),
     // new webpack.optimize.CommonsChunkPlugin({
     //   name: 'vendor',
     // }),
