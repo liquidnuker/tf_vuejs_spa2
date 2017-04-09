@@ -15,7 +15,7 @@ import subroute404 from './vue-components/subroute404.vue';
 
 // 
 // ======================================================/
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [{
   path: '/',
@@ -54,4 +54,4 @@ new Vue({
   el: '#app',
   router,
   render: h => h(vcRouterLinks)
-})
+});
